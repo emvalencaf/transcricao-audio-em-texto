@@ -1,0 +1,64 @@
+body {
+    background-color: #f8f9fa;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.log-entry {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: flex-start; /* Alinha itens ao topo */
+    position: relative;
+    overflow: hidden; /* Garante que o texto não ultrapasse os limites da div */
+}
+.log-entry strong {
+    margin-right: 10px;
+    font-weight: bold;
+}
+.log-entry .typewriter {
+    display: inline-block;
+    white-space: normal; /* Permite que o texto quebre linhas */
+    overflow-wrap: break-word; /* Quebra palavras longas */
+    max-width: 100%; /* Garante que o texto não ultrapasse a largura da div */
+    box-sizing: border-box; /* Inclui a borda e padding no cálculo da largura */
+}
+.loading {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+    border-top: 3px solid #007bff;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#transcription-log {
+    max-height: 60vh;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+#transcription-log::-webkit-scrollbar {
+    width: 12px;
+}
+#transcription-log::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+#transcription-log::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+#transcription-log::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

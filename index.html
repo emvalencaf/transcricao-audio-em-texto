@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconhecimento de Fala em Tempo Real</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Reconhecimento de Fala em Tempo Real</h1>
+        <div class="d-flex justify-content-center mb-3">
+            <button id="start-rec" class="btn btn-primary mr-2">
+                <i class="fas fa-microphone"></i> Iniciar
+            </button>
+            <button id="stop-rec" class="btn btn-warning mr-2">
+                <i class="fas fa-stop"></i> Parar
+            </button>
+            <button id="clear-log" class="btn btn-danger mr-2">
+                <i class="fas fa-trash"></i> Limpar Registros
+            </button>
+            <button id="export-log" class="btn btn-success">
+                <i class="fas fa-file-export"></i> Exportar Registros
+            </button>
+        </div>
+
+        <p id="status" class="text-center mb-3">
+            <span id="loading" class="loading d-none"></span>
+            <span id="status-text">Clique no botão para começar a ouvir...</span>
+        </p>
+
+        <div id="transcription-log">
+            <!-- Log de transcrições será inserido aqui -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS e FontAwesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.1/dist/core.js"></script>
+    <script type="module" src="js/js.js"></script>
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>
